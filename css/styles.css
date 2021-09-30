@@ -161,13 +161,25 @@ body {
 /* -----------------Герой-------------------- */
 .hero {
   margin: 0 auto;
-  background-color: var(--accent-bg-color);
-  text-align: center;
 
+  text-align: center;
+  max-width: 1600px;
   height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
   align-items: center;
+
+  background-color: #c4c4c4;
+  background-image: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  );
+
+  background-image: url(../img/fon.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -386,9 +398,6 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-.footer-set {
-  /* margin-top: 60px; */
-}
 
 .footer-nav {
   /* outline: 2px solid teal;  */
@@ -427,8 +436,8 @@ body {
   font-style: normal;
   margin-bottom: 9px;
 }
-.footer-item {
-}
+/* .footer-item {
+} */
 
 /* --------------Портфолио--------------- *
 /* ------------- Наши работы ----------*/
