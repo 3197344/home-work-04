@@ -353,8 +353,7 @@ background-repeat: no-repeat;
 }
 .command {
   display: flex;
-  /* margin-bottom: 94px; */
-  /* width: 270px; */
+
 }
 
 .command-item {
@@ -400,6 +399,47 @@ background-repeat: no-repeat;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+}
+/* --------------Постоянные клиенты-------------------- */
+.our-clients {
+  background-color: var(--primary-bg-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-item {
+  margin-bottom: 50px;
+  font-weight: 700px;
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.clients {
+  display: flex;
+  margin: 0 auto;
+   /* outline: 2px solid rgb(25, 14, 173); */
+ 
+}
+.clients-img {
+    margin: 0 auto;
+
+
+width: 106px;
+  outline: 2px solid rgb(173, 14, 125);
+}
+.clients-section {
+  outline: 2px solid rgb(5, 194, 5);
+    padding-bottom: 16px;
+    padding-top: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    background: #000000;
+}
+.clients .clients-section + .clients-section {
+  margin-left: 30px;
 }
 
 /*---------------- Футер------------------ */
