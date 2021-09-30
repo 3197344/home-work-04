@@ -65,6 +65,7 @@ body {
 .header-box {
   /* border: 1px #ECECEC; */
   outline: 1px solid #ececec;
+  background-color: #ffffff;
 }
 .header-logo {
   display: flex;
@@ -247,6 +248,7 @@ body {
   /* padding-bottom: 94px; */
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: #ffffff;
 }
 
 .feature {
@@ -275,6 +277,41 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+.feature-item::before {
+display: block;
+content: '';
+height: 120px;
+
+outline: 2px solid rgb(27, 2, 138);
+margin-bottom: 30px;
+background-color: #f5f4fa;
+border-radius: 4px;
+padding-top: 25px;
+padding-bottom: 25px;
+padding-left: 100px;
+padding-right: 100px;
+
+background-size: 70px;
+background-position: center;
+background-repeat: no-repeat;
+} 
+
+.feature-item.icon-antenna::before {
+  background-image: url(../img/antenna1.svg);
+}
+
+.feature-item.icon-clock::before {
+  background-image: url(../img/clock1.svg);
+}
+
+.feature-item.icon-diagram::before {
+  background-image: url(../img/diagram1.svg);
+}
+
+.feature-item.icon-astronaut::before {
+  background-image: url(../img/astronaut1.svg);
+}
+
 
 /* ---------------Чем мы занимаемся----------- */
 .section {
