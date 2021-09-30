@@ -161,24 +161,13 @@ body {
 /* -----------------Герой-------------------- */
 .hero {
   margin: 0 auto;
+  background-color: var(--accent-bg-color);
+  text-align: center;
+
+  height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
-
-  text-align: center;
-  max-width: 1600px;
-  height: 600px;
   align-items: center;
-  background-color: #c4c4c4;
-  /* background-color: var(--accent-bg-color); */
-  background-image: linear-gradient(
-    to right,
-    rgba(47, 48, 58, 0.4) ; rgba(47, 48, 58, 0.4) ;
-  );
-
-  background-image: url(../img/fon.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .hero-title {
@@ -242,7 +231,9 @@ body {
   border: 0;
   clip: rect(0 0 0 0);
 }
-.section {
+.section-feature {
+  /* padding-bottom: 94px; */
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -271,17 +262,6 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
-.feature-item::before {
-  margin-bottom: 30px;
-
-  display: block;
-  content: '';
-  width: 270px;
-  height: 120px;
-  /* background-color: #000000; */
-  background: #f5f4fa;
-  border-radius: 4px;
 }
 
 /* ---------------Чем мы занимаемся----------- */
@@ -324,12 +304,13 @@ body {
 }
 .command {
   display: flex;
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
   /* width: 270px; */
 }
 
 .command-item {
   margin: 0 auto;
+  margin-bottom: 50px;
 
   /* width: 376px; */
   color: var(--title-text-color);
@@ -405,6 +386,9 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
+.footer-set {
+  /* margin-top: 60px; */
+}
 
 .footer-nav {
   /* outline: 2px solid teal;  */
@@ -430,8 +414,8 @@ body {
 .footer-nav .link:focus {
   color: #2196f3;
 }
-.mail {
-  padding-bottom: 9px;
+.footer-link {
+  margin-bottom: 9px;
 }
 .about-address {
   /* outline: 2px solid rgb(2, 0, 128);  */
@@ -443,8 +427,8 @@ body {
   font-style: normal;
   margin-bottom: 9px;
 }
-/* .footer-item {
-} */
+.footer-item {
+}
 
 /* --------------Портфолио--------------- *
 /* ------------- Наши работы ----------*/
@@ -456,13 +440,13 @@ body {
 .button-link {
   display: flex;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 .button-item {
   display: block;
   height: 38px;
   min-width: 29px;
   padding-top: 6px;
-  margin-bottom: 50px;
 }
 
 .button-link .button-item + .button-item {
