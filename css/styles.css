@@ -147,7 +147,7 @@ body {
 }
 
 .header-address {
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
   /* background-color: teal; */
@@ -158,6 +158,14 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.nav-icon {
+  display: flex;
+  margin-right: 10px;
+  text-align: center;
+  
+}
+
+
 
 /* -----------------Герой-------------------- */
 .hero {
@@ -277,27 +285,33 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.feature-item::before {
-display: block;
-content: '';
-height: 120px;
+/* .feature-antenna1{
+  
+  outline: 2px solid rgb(27, 2, 138);
+  /* margin-bottom: 30px; */
+  /* background-color: #f5f4fa;
+  border-radius: 4px; */
+  /* padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+  padding-right: 100px; */
+}
+.icon-antenna{
+ display: block;
+  height: 120px;
+} */
+/* .feature-item::before {
+    content: '';
+   
 
-outline: 2px solid rgb(27, 2, 138);
-margin-bottom: 30px;
-background-color: #f5f4fa;
-border-radius: 4px;
-padding-top: 25px;
-padding-bottom: 25px;
-padding-left: 100px;
-padding-right: 100px;
-
-background-size: 70px;
-background-position: center;
-background-repeat: no-repeat;
-} 
+  background-size: 70px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 .feature-item.icon-antenna::before {
-  background-image: url(../img/antenna1.svg);
+  background-image: url(../img/icons.svg#antenna1);
+  fill: yellow;
 }
 
 .feature-item.icon-clock::before {
@@ -310,8 +324,7 @@ background-repeat: no-repeat;
 
 .feature-item.icon-astronaut::before {
   background-image: url(../img/astronaut1.svg);
-}
-
+} */
 
 /* ---------------Чем мы занимаемся----------- */
 .section {
@@ -353,7 +366,6 @@ background-repeat: no-repeat;
 }
 .command {
   display: flex;
-
 }
 
 .command-item {
@@ -420,36 +432,29 @@ background-repeat: no-repeat;
 .clients {
   display: flex;
   margin: 0 auto;
-   /* outline: 2px solid rgb(25, 14, 173); */
- 
-}
-.clients-img {
-    margin: 0 auto;
-
-
-
-  outline: 2px solid rgb(173, 14, 125);
+  /* outline: 2px solid rgb(25, 14, 173); */
 }
 .clients-section {
-
-  /* outline: 2px solid rgb(5, 194, 5); */
-    padding-bottom: 16px;
-    padding-top: 16px;
-    padding-left: 32px;
-    padding-right: 32px;
-border: 1px solid #AFB1B8;
-box-sizing: border-box;
-border-radius: 4px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+    /* outline: 2px solid rgb(5, 194, 5); */
 }
-.client-icon{
-    width: 106px;
-    height: 60px;
-    fill: rgba(175, 177, 184, 1);
+.client-icon {
+  width: 106px;
+  height: 60px;
+  fill: rgba(175, 177, 184, 1);
 }
 .client-icon:hover {
   fill: var(--accent-color);
 }
-
+.clients-section:hover {
+ border: 1px solid var(--accent-color);
+}
 .clients .clients-section + .clients-section {
   margin-left: 30px;
 }
