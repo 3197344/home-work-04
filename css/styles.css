@@ -142,10 +142,6 @@ body {
   margin-left: 50px;
 }
 
-.section-title {
-  color: var(--title-text-color);
-}
-
 .header-address {
   display: flex;
   padding-top: 32px;
@@ -158,11 +154,14 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.contact-icon {
+  display: flex;
+  align-items: center;
+}
+
 .nav-icon {
-  
-  margin-right: 10px;
-  
-  
+margin-right: 10px;
+fill: var(--primary-text-color);
 }
 
 
