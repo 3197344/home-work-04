@@ -345,7 +345,8 @@ background-color: var(--first-bg-color);
 }
 .command {
   display: flex;
-}
+ }
+
 
 .command-item {
   margin: 0 auto;
@@ -362,6 +363,9 @@ background-color: var(--first-bg-color);
 
 .command-section {
   margin: 0 auto;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
   /* margin-bottom: 94px; */
   /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
 }
@@ -374,8 +378,7 @@ background-color: var(--first-bg-color);
 
 .command-title {
   margin-bottom: 10px;
-  /* outline: 2px solid rgb(173, 14, 125); */
-  color: var(--title-text-color);
+   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -391,6 +394,47 @@ background-color: var(--first-bg-color);
   text-align: center;
   letter-spacing: 0.03em;
 }
+.command-box{
+display: flex;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-top: 16px;
+  margin-bottom: 30px;
+
+}
+.command-iconbox {
+   /* outline: 1px solid rgb(173, 14, 125); */
+   border-radius: 50px; 
+}
+.command-box .command-iconbox + .command-iconbox {
+  margin-left: 12px;
+}
+.command-link{
+  display: flex;
+  padding: 0;
+  margin: 0;
+  /* justify-content: center; */
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+}
+.command-icon{
+  display: flex;
+  margin: 0 auto;
+  width: 20px;
+  height: 20px;
+fill: #AFB1B8;
+}
+.command-iconbox:hover,
+.command-iconbox:focus {
+  background-color: var(--accent-color);
+}
+.command-iconbox:hover .command-icon,
+.command-iconbox:focus .command-icon {
+fill: #FFFFFF;
+}
+
 /* --------------Постоянные клиенты-------------------- */
 .our-clients {
   background-color: var(--primary-bg-color);
