@@ -305,10 +305,11 @@ background-color: var(--first-bg-color);
   letter-spacing: 0.03em;
 }
 
+
 /* ---------------Чем мы занимаемся----------- */
 .section {
   /* outline: 2px solid rgb(173, 14, 125); */
-  background-color: var(--primary-bg-color);
+  background-color: var(--second-bg-color);
   padding-bottom: 94px;
 }
 
@@ -437,7 +438,7 @@ fill: #FFFFFF;
 
 /* --------------Постоянные клиенты-------------------- */
 .our-clients {
-  background-color: var(--primary-bg-color);
+  background-color: var(--second-bg-color);
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -492,9 +493,6 @@ fill: #FFFFFF;
 }
 
 .footer-list {
-  width: 1200px;
-
-  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -540,6 +538,7 @@ fill: #FFFFFF;
 .footer-nav .link:focus {
   color: #2196f3;
 }
+
 .footer-link {
   margin-bottom: 9px;
 }
@@ -553,9 +552,60 @@ fill: #FFFFFF;
   font-style: normal;
   margin-bottom: 9px;
 }
-/* .footer-item {
-} */
+.footer-box {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+  width: 206px;
+}
+.footer-text{
+  color: var(--second-accent-color);
+  font-weight: 700px;
+font-size: 14px;
+line-height: 1.15;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+margin-bottom: 20px;
+}
+.footer-command-box{
+display: flex;
 
+ }
+.footer-command-iconbox {
+   /* outline: 1px solid rgb(173, 14, 125); */
+   border-radius: 50px; 
+   background-color: rgba(255, 255, 255, 0.1);
+  
+  
+}
+.footer-command-box .footer-command-iconbox + .footer-command-iconbox {
+  margin-left: 12px;
+}
+.footer-command-link{
+  display: flex;
+  padding: 0;
+  margin: 0;
+  /* justify-content: center; */
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+}
+.footer-command-icon{
+  display: flex;
+  margin: 0 auto;
+  width: 20px;
+  height: 20px;
+fill: #AFB1B8;
+}
+.footer-command-iconbox:hover,
+.footer-command-iconbox:focus {
+  background-color: var(--accent-color);
+}
+.footer-command-iconbox:hover .footer-command-icon,
+.footer-command-iconbox:focus .footer-command-icon {
+fill: #FFFFFF;
+}
 /* --------------Портфолио--------------- *
 /* ------------- Наши работы ----------*/
 .our-work {
