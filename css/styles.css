@@ -262,6 +262,25 @@ body {
 .feature {
   display: flex;
   margin: 0 auto;
+  
+}
+.feature-section{
+border-radius: 4px; 
+/* outline: 2px solid rgb(5, 194, 5); */
+padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+  padding-right: 100px; 
+  margin-bottom: 30px;
+background-color: var(--first-bg-color);
+}
+
+.feature-icon {
+  display: block;
+  margin: 0 auto;
+  width: 70px;
+  height: 70px;
+  fill: #212121;
 }
 
 .feature .feature-item:not(:last-child) {
@@ -277,6 +296,7 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+ 
 }
 .feature-text {
   color: var(--primary-text-color);
@@ -285,46 +305,6 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-/* .feature-antenna1{
-  
-  outline: 2px solid rgb(27, 2, 138);
-  /* margin-bottom: 30px; */
-  /* background-color: #f5f4fa;
-  border-radius: 4px; */
-  /* padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 100px;
-  padding-right: 100px; */
-}
-.icon-antenna{
- display: block;
-  height: 120px;
-} */
-/* .feature-item::before {
-    content: '';
-   
-
-  background-size: 70px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.feature-item.icon-antenna::before {
-  background-image: url(../img/icons.svg#antenna1);
-  fill: yellow;
-}
-
-.feature-item.icon-clock::before {
-  background-image: url(../img/clock1.svg);
-}
-
-.feature-item.icon-diagram::before {
-  background-image: url(../img/diagram1.svg);
-}
-
-.feature-item.icon-astronaut::before {
-  background-image: url(../img/astronaut1.svg);
-} */
 
 /* ---------------Чем мы занимаемся----------- */
 .section {
