@@ -441,7 +441,7 @@ body {
 
 .clients-item {
   margin-bottom: 50px;
-  font-weight: 700px;
+  font-weight: 700;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -556,7 +556,7 @@ body {
 }
 .footer-text {
   color: var(--second-accent-color);
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.03em;
