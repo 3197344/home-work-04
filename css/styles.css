@@ -40,7 +40,7 @@ img {
 }
 
 body {
-  background-color: var(--primary-bg-color);
+  /* background-color: var(--primary-bg-color); */
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
@@ -128,20 +128,27 @@ body {
 .auth-nav .link {
   text-decoration: none;
 }
-.auth-nav .link:hover,
+/* .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: #2196f3;
+} */
+
+.header-address:hover,
+.header-address:focus {
+  /* fill: var(--accent-color); */
+  color: var(--accent-color);
 }
-.contact-icon .nav-icon:hover,
-.contact-icon .nav-icon:focus {
+.header-address:hover .nav-icon,
+.header-address:focus .nav-icon {
   fill: var(--accent-color);
+  color: var(--accent-color);
 }
 .auth-nav {
   display: flex;
   /* outline: 2px solid rgb(173, 14, 125); */
   margin-left: auto;
 }
-.auth-nav .items + .items {
+.auth-nav .contact-items + .contact-items {
   margin-left: 50px;
 }
 
@@ -179,13 +186,8 @@ body {
   align-items: center;
 
   background-color: #c4c4c4;
-  background-image: linear-gradient(
-    to right,
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-  );
-
-  background-image: url(../img/fon.jpg);
+  background-image: url(../img/fon.jpg),
+    linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -205,7 +207,7 @@ body {
   text-transform: uppercase;
 }
 
-.button {
+/* .button {
   color: var(--title-text-color);
   background-color: var(--primary-bg-color);
 
@@ -215,16 +217,18 @@ body {
 
   align-items: center;
   text-align: center;
-  margin: 0 auto;
-}
 
-.button.primary {
+} */
+
+.button-primary {
   display: block;
   width: 200px;
   height: 50px;
   align-items: center;
   text-align: center;
   /* margin-bottom: 200px; */
+   border-radius: 4px;
+  border: none;
 
   font-family: Roboto, sans-serif;
   color: var(--second-accent-color);
@@ -233,13 +237,24 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+    margin: 0 auto;
 }
 
-.button.primary:hover,
-.button.primary:focus {
-  color: var(--title-text-color);
-  background-color: var(--first-bg-color);
+.hero .button-primary:hover,
+.hero .button-primary:focus {
+  color: var(--second-accent-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  
 }
+/* .button-item .button-secondary:hover,
+.button-item .button-secondary:focus {
+  color: var(--second-accent-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+} */
 
 /* -------------Особенности------------- */
 .visually-hidden {
@@ -266,12 +281,12 @@ body {
 .feature-section {
   border-radius: 4px;
   /* outline: 2px solid rgb(5, 194, 5); */
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 100px;
-  padding-right: 100px;
-  margin-bottom: 30px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+
   background-color: var(--first-bg-color);
+  margin-bottom: 30px;
 }
 
 .feature-icon {
@@ -385,7 +400,7 @@ body {
   letter-spacing: 0.03em;
 }
 .command-discription {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   color: var(--primary-text-color);
   font-weight: 400;
   font-size: 16px;
@@ -409,16 +424,14 @@ body {
 }
 .command-link {
   display: flex;
-  padding: 0;
-  margin: 0;
-  /* justify-content: center; */
+  /* padding: 0;
+  margin: 0; */
+  justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
 }
 .command-icon {
-  display: flex;
-  margin: 0 auto;
   width: 20px;
   height: 20px;
   fill: #afb1b8;
@@ -426,10 +439,16 @@ body {
 .command-iconbox:hover,
 .command-iconbox:focus {
   background-color: var(--accent-color);
+  /* border-radius: 50%; */
 }
-.command-iconbox:hover .command-icon,
-.command-iconbox:focus .command-icon {
-  fill: #ffffff;
+.command-link:hover .command-icon,
+.command-link:focus .command-icon {
+  fill: var(--second-accent-color);
+}
+.command-link:hover,
+.command-link:focus {
+  background-color: var(--accent-color);
+  border-radius: 50%;
 }
 
 /* --------------Постоянные клиенты-------------------- */
@@ -451,29 +470,43 @@ body {
 }
 .clients {
   display: flex;
-  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
   /* outline: 2px solid rgb(25, 14, 173); */
 }
 .clients-section {
-  padding-bottom: 16px;
-  padding-top: 16px;
-  padding-left: 32px;
-  padding-right: 32px;
-  border: 1px solid #afb1b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid #afb1b8;
   box-sizing: border-box;
-  border-radius: 4px;
+  border-radius: 4px; */
   /* outline: 2px solid rgb(5, 194, 5); */
 }
+.clients-section-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;   border-radius: 4px;
+}
 .client-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 106px;
   height: 60px;
   fill: rgba(175, 177, 184, 1);
 }
-.client-icon:hover {
+.clients-section-icon:hover .client-icon,
+.clients-section-icon:focus .client-icon {
   fill: var(--accent-color);
 }
-.clients-section:hover {
+.clients .clients-section:hover,
+.clients .clients-section:focus {
   border: 1px solid var(--accent-color);
+  border-radius: 4px;
 }
 .clients .clients-section + .clients-section {
   margin-left: 30px;
@@ -487,7 +520,16 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 
+  /* background-color: tomato; */
+  align-items: baseline;
+}
 .footer-list {
   padding-left: 15px;
   padding-right: 15px;
@@ -588,15 +630,22 @@ body {
   margin: 0 auto;
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
+  fill: #ffffff;
 }
+
 .footer-command-iconbox:hover,
 .footer-command-iconbox:focus {
   background-color: var(--accent-color);
+
 }
-.footer-command-iconbox:hover .footer-command-icon,
-.footer-command-iconbox:focus .footer-command-icon {
-  fill: #ffffff;
+.footer-command-link:hover .footer-command-icon,
+.footer-command-link:focus .footer-command-icon {
+  fill: var(--second-accent-color);
+}
+.footer-command-link:hover,
+.footer-command-link:focus {
+  background-color: var(--accent-color);
+  border-radius: 50%;
 }
 /* --------------Портфолио--------------- *
 /* ------------- Наши работы ----------*/
