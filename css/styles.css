@@ -186,8 +186,9 @@ body {
   align-items: center;
 
   background-color: #c4c4c4;
-  background-image: url(../img/fon.jpg),
-    linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-image: 
+    linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../img/fon.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
